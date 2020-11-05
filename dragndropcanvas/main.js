@@ -123,11 +123,11 @@ for (let i = 0; i < items.length; i ++) {
 //Keep in mind that display and download Buttons will give following error "Tainted canvases may not be exported."
 // This error was solved when serving the project from a localhost server, serving the images from cloudinary and setting crossorigin='anonymous'
 // on the images elements in the HTML
-displayButton.addEventListener('click', function() {
-    var dataURI = canvas.toDataURL();
-    canvasConverted.src = dataURI;
-    console.log(dataURI);
-});
+// displayButton.addEventListener('click', function() {
+//     var dataURI = canvas.toDataURL();
+//     canvasConverted.src = dataURI;
+//     console.log(dataURI);
+// });
 
 downloadButton.addEventListener('click', function() {
     // Explorer Edge Support (PNG only)
